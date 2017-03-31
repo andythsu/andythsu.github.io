@@ -2,6 +2,7 @@ h1{
 	font-size : 24px;
 	font-family:century gothic;
 	color: white;
+	
 }
 .blended_grid{
 	display:block;
@@ -41,7 +42,7 @@ h1{
 	width:auto;
 }
 #oneTab{
-	padding-left:5em;
+	padding-left:2em;
 }
 
 a{
@@ -60,6 +61,6 @@ body{
 }
 
 #twoTab{
-	padding-left:10em;
+	padding-left:4em;
 }
 
