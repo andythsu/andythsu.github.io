@@ -1,3 +1,65 @@
 h1{
 	font-size : 24px;
+	font-family:century gothic;
+	color: white;
 }
+.blended_grid{
+	display:block;
+	width:1000px;
+	overflow:auto;
+	margin:100px auto 0 auto;
+}
+
+.pageHeader{
+	float:left;
+	clear:none;
+	height:500px;
+	width:auto;
+}
+.pageLeftMenu{
+	float:left;
+	clear:none;
+	height:600px;
+	width:160px;
+}
+.pageContent{
+	float:left;
+	clear:none;
+	height:700px;
+	width:680px;
+}
+.pageRightMenu{
+	float:left;
+	clear:none;
+	height:600px;
+	width:auto;
+}
+.pageFooter{
+	float:left;
+	clear:none;
+	height:100px;
+	width:auto;
+}
+#oneTab{
+	padding-left:5em;
+}
+
+a{
+	text-decoration: none;
+}
+.tops{
+	width:auto;
+	height:100px;
+}
+
+body{
+		
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+#twoTab{
+	padding-left:10em;
+}
+
