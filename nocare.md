@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
 	<title>GO WATCH THE VIDEO</title>
@@ -10,4 +10,4 @@
 	</p>
 	<iframe src="https://giphy.com/embed/d2W7eZX5z62ziqdi" style ="margin-left: 30em;margin-top: 3em;" width="480" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 </body>
-</html>
+
