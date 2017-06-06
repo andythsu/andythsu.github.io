@@ -8,7 +8,7 @@
 </head>
 <body background = "homeBackground.jpg">
   <div id = "overlay">
-    <h1>Click anywhere to continue or space to continue</h1>
+    <h1>Click anywhere or press space to continue</h1>
     <h2><font color = "white" face="Consolas">Anything in green in clickable</font></h2>
   </div>
   <div class = "blended_grid">
@@ -62,14 +62,14 @@ integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 crossorigin="anonymous"></script>
 <script type="text/javascript">
 
-$("#overlay").on('click',function(){
-  $(this).hide();
-});
+  $("#overlay").on('click',function(){
+    $(this).hide();
+  });
 
-$(document).bind("keyup", "space", function(e){
-  if(e.keyCode == 32){
-    $("#overlay").hide();
-  }
-});
+  $(document).bind("keyup", "space", function(e){
+    if(e.keyCode == 32){
+      $("#overlay").hide();
+    }
+  });
 
 </script>
