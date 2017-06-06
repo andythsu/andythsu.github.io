@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="indexStylesheet.css" rel="stylesheet" type="text/css" />
-<title>	
-Home Page
-</title>
+  <link href="indexStylesheet.css" rel="stylesheet" type="text/css" />
+  <title>
+    Home Page
+  </title>
 </head>
 <body background = "homeBackground.jpg">
-    <div class = "blended_grid">
-        <div class = "pageHeader"></div>
-        <div class = "pageLeftMenu"></div>
-        <div class = "pageContent">
-    <h1>
+  <div id = "overlay">
+    <h1>Click anywhere to continue or space to continue</h1>
+    <h2><font color = "white" face="Consolas">Anything in green in clickable</font></h2>
+  </div>
+  <div class = "blended_grid">
+    <div class = "pageHeader"></div>
+    <div class = "pageLeftMenu"></div>
+    <div class = "pageContent">
+      <h1>
         <font color = "FF33FB">import</font>
         <a href="https://resume.creddle.io/resume/avryggcs52i" target="_blank"><font color = "05AE29"><em>Resume</em></font></a> ;
-    </h1>
-    <h1>
+      </h1>
+      <h1>
         <!-- FF33FB = light purple -->
         <font color = "FF33FB">class</font> Welcome {
-    </h1>
-    <h1 id = "oneTab">
-        <font color = "FF33FB">public static void</font> main(String[] <font color = "FF4333">args</font>) {
-    </h1>
-    <h1 id = "twoTab">
-        System.<font color = "3373FF">out</font>.println("My name is <font color = "21B9EC"><b>Andy Su</b></font>, and I am currently enrolled in
-        <font face = "Rockwell";font color = "yellow" >Management Engineering</font> at
-        <font face = "Rockwell";font color = "yellow" >University of Waterloo.</font>
-        <br></br> <!-- skipping a line -->
-        I am a <font face = "Rockwell";font color = "yellow"  > Java </font> developer, but I am also open
-        to many other programming languages, such as <font face = "Rockwell";font color = "yellow" > R, python, Excel VBA
-        </font> and <font face = "Rockwell";font color = "yellow" > Arduino. </font>
-        <br></br>
-        As a programmer, I have built projects and uploaded. You can find them
-        <a href = "https://github.com/andythsu" target ="_blank"> <font face = "Rockwell";font color = "05AE29"> <em>here()</em>. </font> </a>
-        <br></br>
-        As a person, I like to make friends and listen to different stories. Feel free to
-        <a href="mailto:th2su@edu.uwaterloo.ca"> <font face = "Rockwell";font color = "05AE29"><em>email_me()</em> </font></a>
-        or message me on
-        <a href = "https://www.linkedin.com/in/andythsu/" target ="_blank"><font face = "Rockwell";font color = "05AE29" ><em>Linkedin()</em></font></a> ");
-    </h1>
-    <h1 id = "oneTab">
+        </h1>
+        <h1 id = "oneTab">
+          <font color = "FF33FB">public static void</font> main(String[] <font color = "FF4333">args</font>) {
+          </h1>
+          <h1 id = "twoTab">
+            System.<font color = "3373FF">out</font>.println("My name is <font color = "21B9EC"><b>Andy Su</b></font>, and I am currently enrolled in
+            <font face = "Rockwell";font color = "yellow" >Management Engineering</font> at
+            <font face = "Rockwell";font color = "yellow" >University of Waterloo.</font>
+            <br></br> <!-- skipping a line -->
+            I am a <font face = "Rockwell";font color = "yellow"  > Java </font> developer, but I am also open
+            to many other programming languages, such as <font face = "Rockwell";font color = "yellow" > R, Python, Excel VBA
+            </font> and <font face = "Rockwell";font color = "yellow" > Arduino. </font>
+            <br></br>
+            As a programmer, I have built projects and uploaded. You can find them
+            <a href = "https://github.com/andythsu" target ="_blank"> <font face = "Rockwell";font color = "05AE29"> <em>here()</em>. </font> </a>
+            <br></br>
+            As a person, I like to make friends and listen to different stories. Feel free to
+            <a href="mailto:th2su@edu.uwaterloo.ca"> <font face = "Rockwell";font color = "05AE29"><em>email_me()</em> </font></a>
+            or message me on
+            <a href = "https://www.linkedin.com/in/andythsu/" target ="_blank"><font face = "Rockwell";font color = "05AE29" ><em>Linkedin()</em></font></a> ");
+          </h1>
+          <h1 id = "oneTab">
+          }
+        </h1>
+        <h1>
         }
-    </h1>
-    <h1>
-        }
-    </h1>
-        </div>
-        <div class = "pageRightMenu"></div>
-        <div class = "pageFooter"></div>
-    </div>  
-    
-    
+      </h1>
+    </div>
+    <div class = "pageRightMenu"></div>
+    <div class = "pageFooter"></div>
+  </div>
+
 </body>
 </html>
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+$("#overlay").on('click',function(){
+  $(this).hide();
+});
+
+$(document).bind("keyup", "space", function(e){
+  if(e.keyCode == 32){
+    $("#overlay").hide();
+  }
+});
+
+</script>
