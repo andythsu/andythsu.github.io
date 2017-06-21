@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <link href="indexStylesheet.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <link href="./website_css/indexStylesheet.css" rel="stylesheet" type="text/css" />
   <title>
     Home Page
   </title>
 </head>
 <body background = "homeBackground.jpg">
   <div id = "overlay">
-    <h1>Click anywhere or press space to continue</h1>
+    <h1>Click anywhere or press enter to continue</h1>
     <h2><font color = "white" face="Consolas">Anything in green in clickable</font></h2>
   </div>
   <div class = "blended_grid">
@@ -22,6 +22,10 @@
       <h1>
         <font color = "FF33FB">import</font>
         <a href="https://resume.creddle.io/resume/avryggcs52i" target="_blank"><font color = "05AE29"><em>Resume</em></font></a> ;
+      </h1>
+      <h1>
+        <font color = "FF33FB">import</font>
+        <a href="./languages" target="_blank"><font color = "05AE29"><em>languages</em></font></a> ;
       </h1>
       <h1>
         <!-- FF33FB = light purple -->
@@ -34,14 +38,14 @@
             System.<font color = "3373FF">out</font>.println("My name is <font color = "21B9EC"><b>Andy Su</b></font>, and I am currently enrolled in
             <font face = "Rockwell";font color = "yellow" >Management Engineering</font> at
             <font face = "Rockwell";font color = "yellow" >University of Waterloo.</font>
-            <br></br> <!-- skipping a line -->
-            I am a <font face = "Rockwell";font color = "yellow"  > Java </font> developer, but I am also open
-            to many other programming languages, such as <font face = "Rockwell";font color = "yellow" > R, Python, Excel VBA
-            </font> and <font face = "Rockwell";font color = "yellow" > Arduino. </font>
+
             <br></br>
+
             As a programmer, I have built projects and uploaded. You can find them
             <a href = "https://github.com/andythsu" target ="_blank"> <font face = "Rockwell";font color = "05AE29"> <em>here()</em>. </font> </a>
+
             <br></br>
+
             As a person, I like to make friends and listen to different stories. Feel free to
             <a href="mailto:th2su@edu.uwaterloo.ca"> <font face = "Rockwell";font color = "05AE29"><em>email_me()</em> </font></a>
             or message me on
@@ -66,14 +70,14 @@ integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 crossorigin="anonymous"></script>
 <script type="text/javascript">
 
-  $("#overlay").on('click',function(){
-    $(this).hide();
-  });
+$("#overlay").on('click',function(){
+  $(this).hide();
+});
 
-  $(document).bind("keyup", "space", function(e){
-    if(e.keyCode == 32){
-      $("#overlay").hide();
-    }
-  });
+$(document).bind("keyup",function(e){
+  if(e.keyCode == 13){ //if enter is pressed
+    $("#overlay").hide();
+  }
+});
 
 </script>
