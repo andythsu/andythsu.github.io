@@ -25,6 +25,7 @@ padding-top: 50px;
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
   border-right: 1px solid #eee;
+  width:20%;
 }
 
 /* Sidebar navigation */
