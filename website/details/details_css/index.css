@@ -9,6 +9,10 @@ td{
   font-family: Georgia;
 }
 
+td[class = "language"]{
+  width: 50%;
+}
+
 hr{
   border-width: 1.5px;
 }
