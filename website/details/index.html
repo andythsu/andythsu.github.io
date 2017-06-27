@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <link rel="stylesheet" href="languages_css/structure.css">
-  <title>Languages</title>
+  <link rel="stylesheet" href="details_css/structure.css">
+  <link rel="stylesheet" href="details_css/index.css">
+  <title>Details</title>
 </head>
 <body>
   <!-- navbar -->
@@ -22,6 +23,9 @@
         <li class="nav-item" id = "hobbies_page">
           <a class ="" href="hobbies.html">Hobbies</a>
         </li>
+        <li class = "nav-item" id = "github_page">
+          <a class = "" href="https://github.com/andythsu" target="_blank">Visit my GitHub</a>
+        </li>
         <li class = "nav-item nav-divider" ></li>
         <li class="nav-item">
           <a href="../../">Back to Home Page</a>
@@ -31,10 +35,71 @@
   </div>
   <!-- navbar ends -->
 
-  <div class="container-fluid">
-    <h1 style="text-align:center;">SELF LEARN</h1>
+  <h1 style="text-align:center;">Programming Skills</h1>
+  <div class="container-fluid" style="width:35%">
+    <table class = "table table-bordered">
+      <tr>
+        <th>Language</th>
+        <th>Proficiency</th>
+      </tr>
+      <tr>
+        <td><code>Java</code></td>
+        <td id = "java"></td>
+      </tr>
+      <tr>
+        <td><code>Javascript</code></td>
+        <td id = "javascript"></td>
+      </tr>
+      <tr>
+        <td><code>PHP</code></td>
+        <td id = "php"></td>
+      </tr>
+      <tr>
+        <td><code>MySQL</code></td>
+        <td id = "mysql"></td>
+      </tr>
+      <tr>
+        <td><code>HTML</code></td>
+        <td id = "html"></td>
+      </tr>
+      <tr>
+        <td><code>CSS</code></td>
+        <td id = "css"></td>
+      </tr>
+    </table>
   </div>
 
+  <hr style="width:95%">
+
+  <h1 style="text-align:center;">Self Learn</h1>
+  <div class="container-fluid" style="width:35%">
+    <table class = "table table-bordered">
+      <tr>
+        <th>Language</th>
+        <th>Proficiency</th>
+      </tr>
+      <tr>
+        <td><code>Android Studio</code></td>
+        <td id = "android_studio"></td>
+      </tr>
+      <tr>
+        <td><code>Arduino</code></td>
+        <td id = "arduino"></td>
+      </tr>
+      <tr>
+        <td><code>Node.js</code></td>
+        <td id = "nodeJS"></td>
+      </tr>
+      <tr>
+        <td><code>Python</code></td>
+        <td id = "python"></td>
+      </tr>
+      <tr>
+        <td><code>R</code></td>
+        <td id = "R"></td>
+      </tr>
+    </table>
+  </div>
 </body>
 
 </html>
@@ -42,5 +107,4 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<script type="text/javascript">
-</script>
+<script type="text/javascript" src = "js/index.js"></script>
