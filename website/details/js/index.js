@@ -16,6 +16,7 @@ $(document).ready(function(){
   loadHtml();
   loadCss();
   loadMysql();
+  loadJquery();
 });
 
 function loadJavascript(){
@@ -86,6 +87,11 @@ function loadMysql(){
   loadStars("filled_star", 3, "#mysql");
   loadStars("half_filled_star", 1, "#mysql");
   // loadStars("empty_star", 1, "#mysql");
+}
+
+function loadJquery(){
+  clear("#jquery");
+  loadStars("filled_star", 4, "#jquery");
 }
 
 // below are helper functions
