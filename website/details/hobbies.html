@@ -13,25 +13,7 @@
 </head>
 <body>
   <!-- navbar -->
-  <div class = "container-fluid">
-    <nav class="hidden-xs-down bg-faded sidebar">
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item" id = "index_page">
-          <a class="" href="index.html">Languages </a>
-        </li>
-        <li class="nav-item active" id = "hobbies_page">
-          <a class ="" href="hobbies.html">Hobbies</a>
-        </li>
-        <li class = "nav-item" id = "github_page">
-          <a class = "" href="https://github.com/andythsu" target="_blank">Visit my GitHub</a>
-        </li>
-        <li class = "nav-item nav-divider" ></li>
-        <li class="nav-item">
-          <a href="../../">Back to Home Page</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <div class="navBar"></div>
   <!-- navbar ends -->
 
   <div class="" style="text-align:center;">
@@ -45,5 +27,8 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<script src="js/nav_bar.class.js"></script>
 <script type="text/javascript">
+var navBar = new NavBar('hobbies_page');
+$(".navBar").append(navBar.template);
 </script>

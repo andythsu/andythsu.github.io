@@ -17,6 +17,13 @@ hr{
   border-width: 1.5px;
 }
 
+.vr{
+  max-width: 1px;
+  height: 500px;
+  background-color: rgba(71, 69, 69, 0.5);
+  margin: 0 auto;
+}
+
 img[class="filled_star"]{
   width: 35px;
   height: 33px;
