@@ -26,14 +26,14 @@ NavBar.prototype.getTemplate = function () {
           <li class="nav-item" id = "index_page">
             <a class="" href="index.html">Languages </a>
           </li>
+          <li class="nav-item" id="experiences_page">
+            <a class = "" href="experiences.html">Experiences</a>
+          </li>
           <li class="nav-item" id = "hobbies_page">
             <a class ="" href="hobbies.html">Hobbies</a>
           </li>
           <li class = "nav-item" id = "github_page">
             <a class = "" href="https://github.com/andythsu" target="_blank">Visit my GitHub</a>
-          </li>
-          <li class="nav-item" id="experience_page">
-            <a class = "" href = "">Experiences</a>
           </li>
           <li class = "nav-item nav-divider" ></li>
           <li class="nav-item">
