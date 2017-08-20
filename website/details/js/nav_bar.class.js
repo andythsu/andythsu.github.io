@@ -5,17 +5,7 @@ function NavBar(current_page) {
 }
 
 NavBar.prototype.makeActive = function () {
-  var self = this;
-  var all_pages = this.template.find('li.nav-item');
-  var elem, elem_id;
-  for (var i = 0; i < all_pages.length; i++) {
-    elem = all_pages.eq(i);
-    elem_id = elem.attr('id');
-    if (elem_id !== undefined && elem_id == self.current_page) {
-      elem.addClass('active');
-      break;
-    }
-  }
+  this.template.find('#'+this.current_page).addClass('active');
 };
 
 NavBar.prototype.getTemplate = function () {
@@ -29,8 +19,8 @@ NavBar.prototype.getTemplate = function () {
           <li class="nav-item" id="experiences_page">
             <a class = "" href="experiences.html">Experiences</a>
           </li>
-          <li class="nav-item" id = "hobbies_page">
-            <a class ="" href="hobbies.html">Hobbies</a>
+          <li class="nav-item" id = "insterests_page">
+            <a class ="" href="interests.html">Insterests</a>
           </li>
           <li class = "nav-item" id = "github_page">
             <a class = "" href="https://github.com/andythsu" target="_blank">Visit my GitHub</a>
