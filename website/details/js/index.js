@@ -6,6 +6,7 @@ var filled_star_picture = $("<img class=\"filled_star\" src="+ filled_star_path 
 
 $(document).ready(function(){
   loadJavascript();
+  loadJQuery();
   loadPhp();
   loadNodeJS();
   loadAndroidStudio();
@@ -16,13 +17,17 @@ $(document).ready(function(){
   loadHtml();
   loadCss();
   loadMysql();
-  loadJquery();
 });
 
 function loadJavascript(){
   clear("#javascript");
   loadStars("filled_star", 4, "#javascript");
   // loadStars("empty_star", 1, "#javascript");
+}
+
+function loadJQuery() {
+  clear("#jquery");
+  loadStars("filled_star", 4, "#jquery");
 }
 
 function loadPhp(){
@@ -89,11 +94,6 @@ function loadMysql(){
   // loadStars("empty_star", 1, "#mysql");
 }
 
-function loadJquery(){
-  clear("#jquery");
-  loadStars("filled_star", 4, "#jquery");
-}
-
 // below are helper functions
 function loadStars(type, amount, target){
   if (type == "filled_star") {
@@ -124,7 +124,7 @@ function loadHalfFilledStar(target){
   });
 }
 
-function loadEmptyStar( target){
+function loadEmptyStar(target){
   $("<img class=\"empty_star\" src="+ empty_star_path +">").on('load',function(e){
     $(target).append($(this));
   });
