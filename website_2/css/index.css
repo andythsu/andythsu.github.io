@@ -3,7 +3,6 @@ html, body{
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
 }
 
 .section_header{
@@ -125,4 +124,8 @@ section{
 .interests .interest_img_div img{
   width: 100%;
   border-radius: 100%;
+}
+
+.hide_me{
+opacity: 0;
 }
