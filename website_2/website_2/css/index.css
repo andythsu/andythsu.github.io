@@ -1,0 +1,84 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.welcome_section{
+  background-image: url('../img/welcome_section_img_2.jpg');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.welcome_section_overlay{
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.welcome_section_text_area{
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  top: 10%;
+}
+
+.welcome_section .quote_header{
+  font-size: 3rem;
+}
+
+.welcome_section .quote_content{
+  font-size: 2.5rem;
+}
+
+.shadded_hr{
+  border:none;
+  width: 90%;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 20px 20px -20px #333;
+  margin: -60px auto 10px;
+}
+
+.experience{
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+background-color: #f2f2f2;
+}
+
+.experience .resume{
+  text-align: center;
+}
+
+.experience .resume:hover{
+  cursor: pointer;
+}
+
+.experience .resume:hover .icon{
+  font-size: 7rem;
+}
+
+.experience .resume .description{
+  padding-top: 10px;
+}
+
+.experience .resume .icon{
+  font-size: 6rem;
+  color: #42c5f4;
+}
+
+
+
+.skills .skills_img{
+  min-height: 30rem;
+  background-size: cover;
+}
+
+.interests .interests_header{
+
+}
