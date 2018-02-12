@@ -6,8 +6,12 @@ html, body{
   overflow-x: hidden;
 }
 
+.section_header{
+  text-align: center;
+}
+
 .welcome_section{
-  background-image: url('../img/welcome_section_img_2.jpg');
+  background-image: url('../img/welcome_section_img.jpg');
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -35,37 +39,90 @@ html, body{
   font-size: 2.5rem;
 }
 
+/* responsive according to the width */
+@media (max-width: 576px) {
+  .welcome_section .quote_content {
+    font-size: 7vw;
+  }
+}
+
 .shadded_hr{
   border:none;
-  width: 90%;
+  width: 50%;
   height: 50px;
   margin-top: 0;
   border-bottom: 1px solid #1f1209;
   box-shadow: 0 20px 20px -20px #333;
-  margin: -60px auto 10px;
+  margin: -50px auto 10px;
 }
 
 .experience{
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-background-color: #f2f2f2;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #f2f2f2;
 }
 
 .experience .resume{
-
   text-align: center;
 }
 
+.experience .resume:hover{
+  cursor: pointer;
+}
+
+.experience .resume:hover .icon{
+  font-size: 7rem;
+}
+
+.experience .resume .description{
+  padding-top: 10px;
+}
+
 .experience .resume .icon{
-  font-size: 10rem;
+  font-size: 6rem;
   color: #42c5f4;
 }
 
-.skills .skills_img{
-  min-height: 30rem;
-  background-size: cover;
+.projects .project_item{
+  padding-top: 2em;
 }
 
-.interests .interests_header{
+.projects .project_item .icon{
+  font-size: 2em;
+  color: #42c5f4;
+}
 
+.projects .project_item .icon:hover{
+  font-size: 3em;
+  cursor: pointer;
+}
+
+.projects_text_div{
+  padding-top: 2em;
+}
+
+.projects .projects_img_div{
+  text-align: center;
+}
+
+section{
+  padding-top:2em;
+  padding-bottom: 2em;
+}
+
+.interests .interests_item{
+  padding-top: 2em;
+}
+
+.interests .interest_text_div .interest_text_title{
+  text-align: center;
+}
+
+.interests .interest_img_div{
+  width: 60%;
+}
+
+.interests .interest_img_div img{
+  width: 100%;
+  border-radius: 100%;
 }
