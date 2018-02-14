@@ -126,6 +126,27 @@ section{
   border-radius: 100%;
 }
 
+.skills .skills_div{
+  padding-top: 1em;
+}
+
+.skills .skills_search_input_div{
+  text-align: center;
+}
+
+
+.skills .skills_search_input{
+  text-align: center;
+}
+
+
+
+.footer .footer_text_div{
+  text-align: center;
+}
+
+
+/*this is for scrolling effect*/
 .hide_me{
-opacity: 0;
+  opacity: 0;
 }

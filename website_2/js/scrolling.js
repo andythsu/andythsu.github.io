@@ -6,18 +6,13 @@ $(document).ready(function() {
     /* Check the location of each desired element */
     $('.hide_me').each( function(i){
 
-      // var bottom_of_object = $(this).position().top + $(this).outerHeight();
-      // var bottom_of_window = $(window).scrollTop() + $(window).height();
-
       /* if top of object is greater than half of the current window */
       var top_of_object = $(this).position().top;
-      var top_of_window = $(window).scrollTop() + $(window).height() / 2;
+      var half_of_window = $(window).scrollTop() + $(window).height() / 2;
 
       /* If the object is completely visible in the window, fade it it */
-      // if( bottom_of_window > bottom_of_object ){
-      //   $(this).animate({'opacity':'1'},500);
-      // }
-      if( top_of_window > top_of_object ){
+
+      if( half_of_window > top_of_object ){
         $(this).animate({'opacity':'1'},500);
       }
     });
