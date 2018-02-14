@@ -35,13 +35,13 @@ html, body{
 }
 
 .welcome_section .quote_content{
-  font-size: 2.5rem;
+  font-size: 2em;
 }
 
 /* responsive according to the width */
 @media (max-width: 576px) {
   .welcome_section .quote_content {
-    font-size: 7vw;
+    font-size: 5vw;
   }
 }
 
@@ -130,15 +130,12 @@ section{
   padding-top: 1em;
 }
 
-.skills .skills_search_input_div{
-  text-align: center;
-}
-
-
 .skills .skills_search_input{
+  float: right;
+  clear: both;
+  width: 50%;
   text-align: center;
 }
-
 
 
 .footer .footer_text_div{
