@@ -11,6 +11,7 @@ html, body{
 
 .welcome_section{
   background-image: url('../img/welcome_section_img.jpg');
+  background-attachment: fixed;
   background-size: cover;
   height: 100%;
   width: 100%;
