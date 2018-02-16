@@ -138,6 +138,26 @@ section{
   text-align: center;
 }
 
+.skills .skills_div .skills_table_div{
+text-align: center;
+}
+
+.skills .skills_div .skills_table_div code{
+  font-size: 16px;
+}
+
+.skills .skills_div .skills_table_div .fa-star:hover{
+  font-size: 20px;
+}
+
+.skills .skills_div .skills_table_div .fa-star-half:hover{
+  font-size: 20px;
+}
+
+.skills .skills_div .skills_table_div{
+  opacity: 0;
+}
+
 
 .footer .footer_text_div{
   text-align: center;
