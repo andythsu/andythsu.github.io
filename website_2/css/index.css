@@ -139,25 +139,32 @@ section{
 }
 
 .skills .skills_div .skills_table_div{
-text-align: center;
+  text-align: center;
 }
 
 .skills .skills_div .skills_table_div code{
   font-size: 16px;
 }
 
+.skills .skills_div .skills_table_div .fa-star, .skills .skills_div .skills_table_div .fa-star-half {
+  color: rgba(245, 222, 18, 0.59);
+}
+
+/* .skills .skills_div .skills_table_div .fa-star-half{
+color: rgba(245, 222, 18, 0.59);
+} */
+
 .skills .skills_div .skills_table_div .fa-star:hover{
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .skills .skills_div .skills_table_div .fa-star-half:hover{
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .skills .skills_div .skills_table_div{
   opacity: 0;
 }
-
 
 .footer .footer_text_div{
   text-align: center;
