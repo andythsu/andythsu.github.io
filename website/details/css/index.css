@@ -162,9 +162,9 @@ color: rgba(245, 222, 18, 0.59);
   font-size: 22px;
 }
 
-.skills .skills_div .skills_table_div{
-  visibility: hidden;
-}
+/* .skills .skills_div .skills_table_div{
+opacity: 0;
+} */
 
 .footer .footer_text_div{
   text-align: center;
