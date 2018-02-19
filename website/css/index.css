@@ -1,0 +1,177 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section_header{
+  text-align: center;
+}
+
+.welcome_section{
+  background-image: url('../img/welcome_section_img.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.welcome_section_overlay{
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.welcome_section_text_area{
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  top: 10%;
+}
+
+.welcome_section .quote_header{
+  font-size: 3rem;
+}
+
+.welcome_section .quote_content{
+  font-size: 2em;
+}
+
+/* responsive according to the width */
+@media (max-width: 576px) {
+  .welcome_section .quote_content {
+    font-size: 5vw;
+  }
+}
+
+.shadded_hr{
+  border:none;
+  width: 50%;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 20px 20px -20px #333;
+  margin: -50px auto 10px;
+}
+
+.experience{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #f2f2f2;
+}
+
+.experience .resume{
+  text-align: center;
+}
+
+.experience .resume:hover{
+  cursor: pointer;
+}
+
+.experience .resume:hover .icon{
+  font-size: 7rem;
+}
+
+.experience .resume .description{
+  padding-top: 10px;
+}
+
+.experience .resume .icon{
+  font-size: 6rem;
+  color: #42c5f4;
+}
+
+.projects .project_item{
+  padding-top: 2em;
+}
+
+.projects .project_item .icon{
+  font-size: 2em;
+  color: #42c5f4;
+}
+
+.projects .project_item .icon:hover{
+  font-size: 3em;
+  cursor: pointer;
+}
+
+.projects_text_div{
+  padding-top: 2em;
+}
+
+.projects .projects_img_div{
+  text-align: center;
+}
+
+section{
+  padding-top:2em;
+  padding-bottom: 2em;
+}
+
+.interests .interests_item{
+  padding-top: 2em;
+}
+
+.interests .interest_text_div .interest_text_title{
+  text-align: center;
+}
+
+.interests .interest_img_div{
+  width: 60%;
+}
+
+.interests .interest_img_div img{
+  width: 100%;
+  border-radius: 100%;
+}
+
+.skills .skills_div{
+  padding-top: 1em;
+}
+
+.skills .skills_search_input{
+  float: right;
+  clear: both;
+  width: 50%;
+  text-align: center;
+}
+
+.skills .skills_div .skills_table_div{
+  text-align: center;
+}
+
+.skills .skills_div .skills_table_div code{
+  font-size: 16px;
+}
+
+.skills .skills_div .skills_table_div .fa-star, .skills .skills_div .skills_table_div .fa-star-half {
+  color: rgba(245, 222, 18, 0.59);
+}
+
+/* .skills .skills_div .skills_table_div .fa-star-half{
+color: rgba(245, 222, 18, 0.59);
+} */
+
+.skills .skills_div .skills_table_div .fa-star:hover{
+  font-size: 22px;
+}
+
+.skills .skills_div .skills_table_div .fa-star-half:hover{
+  font-size: 22px;
+}
+
+.skills .skills_div .skills_table_div{
+  visibility: hidden;
+}
+
+.footer .footer_text_div{
+  text-align: center;
+}
+
+
+/*this is for scrolling effect*/
+.hide_me{
+  opacity: 0;
+}
