@@ -108,6 +108,7 @@ html, body{
 section{
   padding-top:2em;
   padding-bottom: 2em;
+  z-index: 999;
 }
 
 .interests .interests_item{
@@ -146,13 +147,18 @@ section{
   font-size: 16px;
 }
 
-.skills .skills_div .skills_table_div .fa-star, .skills .skills_div .skills_table_div .fa-star-half {
-  color: rgba(245, 222, 18, 0.59);
+.skills .skills_div .skills_display_btn{
+  z-index: 999;
+  position: relative;
 }
 
-/* .skills .skills_div .skills_table_div .fa-star-half{
-color: rgba(245, 222, 18, 0.59);
-} */
+.text_center{
+  text-align: center;
+}
+
+.star_color{
+  color: rgba(245, 222, 18, 0.59);
+}
 
 .skills .skills_div .skills_table_div .fa-star:hover{
   font-size: 22px;
@@ -162,8 +168,12 @@ color: rgba(245, 222, 18, 0.59);
   font-size: 22px;
 }
 
-.skills .skills_div .skills_table_div{
-  visibility: hidden;
+/* .skills .skills_div .skills_table_div{
+opacity: 0;
+} */
+
+.white_color{
+  color: #fff;
 }
 
 .footer .footer_text_div{
