@@ -24,19 +24,19 @@ myApp.factory('skillFactory', [function(){
 
   skillFactory.prototype.appendFullStar = function () {
     for(var i=0; i<this.full_star; i++){
-      this.DOMselector.append(`<i class="fas fa-star"></i>`);
+      this.DOMselector.append(`<i class="fas fa-star star_color"></i>`);
     }
   };
 
   skillFactory.prototype.appendHalfStar = function () {
     for(var i=0; i<this.half_star; i++){
-      this.DOMselector.append(`<i class="fas fa-star-half"></i>`);
+      this.DOMselector.append(`<i class="fas fa-star-half star_color"></i>`);
     }
   };
 
   skillFactory.prototype.appendEmptyStar = function () {
     for(var i=0; i<this.empty_star; i++){
-      this.DOMselector.append(`<i class="far fa-star"></i>`);
+      this.DOMselector.append(`<i class="far fa-star star_color"></i>`);
     }
   };
 
