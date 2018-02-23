@@ -1,12 +1,16 @@
 myApp.factory('skillFactory', [function(){
-  function skillFactory(skill_name, DOMselector, star) {
+  function skillFactory(skill_name, display_name, star) {
     this.skill_name = skill_name;
+    this.display_name = display_name;
     this.full_star = star['full_star'];
     this.half_star = star['half_star'];
     this.empty_star = star['empty_star'];
-    this.DOMselector = DOMselector;
-    this.appendStar();
+    this.DOMselector = '';
   }
+
+skillFactory.prototype.setDOMSelector = function (DOMselector) {
+  if(DOMselector !== undefined) this.DOMselector = DOMselector;
+};
 
   skillFactory.prototype.show = function () {
     this.DOMselector.animate({'opacity' : 1}, 500).css('visibility', 'visible');
