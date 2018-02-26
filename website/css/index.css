@@ -33,6 +33,10 @@ html, body{
   text-decoration: none;
 }
 
+.carousel{
+  position: initial;
+}
+
 .welcome_section{
   background-image: url('../img/welcome_section_img.jpg');
   background-attachment: fixed;
