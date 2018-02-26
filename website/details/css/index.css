@@ -5,8 +5,32 @@ html, body{
   height: 100%;
 }
 
-.section_header{
+/* utilities css */
+.ubuntu_font{
+  font-family: 'Ubuntu';
+}
+
+.text_decoration_none{
+  text-decoration: none;
+}
+
+.ivory{
+  color: #FFFFF0;
+}
+
+.text_center{
   text-align: center;
+}
+
+/* below are css for layouts */
+.self_intro{
+  height: 100%;
+  padding-top: 15em;
+  background-color: rgba(156, 156, 156, 0.95)
+}
+
+.self_intro a:hover{
+  text-decoration: none;
 }
 
 .welcome_section{
@@ -62,9 +86,6 @@ html, body{
   background-color: #f2f2f2;
 }
 
-.experience .resume{
-  text-align: center;
-}
 
 .experience .resume:hover{
   cursor: pointer;
@@ -101,10 +122,6 @@ html, body{
   padding-top: 2em;
 }
 
-.projects .projects_img_div{
-  text-align: center;
-}
-
 section{
   padding-top:2em;
   padding-bottom: 2em;
@@ -113,10 +130,6 @@ section{
 
 .interests .interests_item{
   padding-top: 2em;
-}
-
-.interests .interest_text_div .interest_text_title{
-  text-align: center;
 }
 
 .interests .interest_img_div{
@@ -139,10 +152,6 @@ section{
   text-align: center;
 }
 
-.skills .skills_div .skills_table_div{
-  text-align: center;
-}
-
 .skills .skills_div .skills_table_div code{
   font-size: 16px;
   padding-right: 5px;
@@ -151,10 +160,6 @@ section{
 .skills .skills_div .skills_display_btn{
   z-index: 999;
   position: relative;
-}
-
-.text_center{
-  text-align: center;
 }
 
 .star_color{
@@ -169,18 +174,9 @@ section{
   font-size: 22px;
 }
 
-/* .skills .skills_div .skills_table_div{
-opacity: 0;
-} */
-
 .white_color{
   color: #fff;
 }
-
-.footer .footer_text_div{
-  text-align: center;
-}
-
 
 /*this is for scrolling effect*/
 .hide_me{
