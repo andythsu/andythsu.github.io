@@ -22,6 +22,14 @@ html, body{
   text-align: center;
 }
 
+.pt-15em{
+  padding-top: 15em;
+}
+
+.pt-10em{
+  padding-top: 10em;
+}
+
 /* below are css for layouts */
 .self_intro{
   height: 100%;
