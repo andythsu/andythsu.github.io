@@ -1,83 +1,310 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <link href="website/website_css/indexStylesheet.css" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="website/pictures/favicon2-32x32.png">
-  <title>
-    Home Page
-  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Andy Su | Student, Developer</title>
+
+  <!-- favicon -->
+  <link rel="icon" type="website/image/png" sizes="32x32" href="website/img/favicon2-32x32.png">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Custom fonts for this template -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="website/css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="website/css/mask.css">
+
+  <!-- angular js cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <!-- angular js directives -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.js"></script>
+
 </head>
-<body background = "website/pictures/homeBackground.jpg">
-  <div id = "overlay">
-    <h1>Click anywhere or press enter to continue</h1>
-  </div>
-  <div class = "blended_grid">
-    <div class = "pageHeader"></div>
-    <div class = "pageLeftMenu"></div>
-    <div class = "pageContent">
-      <h1>
-        <font color = "FF33FB">import</font>
-        <a href="https://resume.creddle.io/resume/avryggcs52i" target="_blank"><span class="import"><em>Resume</em></span></a>, <a href="./website/details" target="_blank"><span class="import"><em>Details</em></span></a>;
-      </h1>
-      <h1>
-        <!-- FF33FB = light purple -->
-        <font color = "FF33FB">class</font> Welcome {
-        </h1>
-        <h1 id = "oneTab">
-          <font color = "FF33FB">public static void</font> main(String[] <font color = "FF4333">args</font>) {
-          </h1>
-          <h1 id = "twoTab">
-            System.<font color = "3373FF">out</font>.println("My name is <font color = "21B9EC"><b>Andy Su</b></font>, and I am currently enrolled in
-            <span style="font-family:Trebuchet MS; color: yellow">Management Engineering</span> at
-            <span style="font-family:Trebuchet MS; color: yellow" >University of Waterloo.</span>
 
-            <br></br>
+<!-- import ng module -->
+<script src="website/js/ng/module.js"></script>
 
-            As a programmer, I have built some side projects. You can find them
-            <a href = "https://github.com/andythsu" target ="_blank"> <span class="link"> <em>Here()</em>. </span> </a>
-            <br></br>
-            As a coop student, I am constantly looking for available jobs. You can <a href="mailto:th2su@edu.uwaterloo.ca"> <span class="link"><em>Email_Me()</em> </span></a>
-            or message me on
-            <a href = "https://www.linkedin.com/in/andythsu/" target ="_blank"><span class="link"><em>LinkedIn()</em></span></a>. You can also gain more insights on coop <a href="https://uwaterloo.ca/hire/hire-waterloo/co-op" target="_blank" ><span class="info">here</span></a> ");
-          </h1>
-          <h1 id = "oneTab">
-          }
-        </h1>
-        <h1>
-        }
-      </h1>
-      <br>
-      <h1 class="comment">/* Side note: check out
-        <a href="./website/details" target="_blank"><span class="import"><em>Details</em></span></a>
-        to learn more about me (if you haven't) */
-      </h1>
+
+<!-- import ng controllers -->
+<script src="website/js/ng/controllers.js"></script>
+
+<!-- import factories -->
+<script src="website/js/ng/factory/skill.factory.js"></script>
+<script src="website/js/ng/factory/PriorityQueue.js"></script>
+
+<!-- import ng services -->
+<script src="website/js/ng/service/services.js"></script>
+
+<body ng-app="myApp">
+  <!-- self intro -->
+  <section class="self_intro">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators" style="bottom: -70px">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner text_center">
+        <div class="carousel-item active ubuntu_font">
+          <h1>System.out.println("Hello World");</h1>
+        </div>
+        <div class="carousel-item ubuntu_font">
+          <div class="container">
+            <h1>I'm <span class="ivory">Andy Su</span> and I'm currently enrolled in
+              <span class="ivory">Management Engineering</span> at the
+              <span class="ivory">University of Waterloo</span>
+            </h1>
+          </div>
+        </div>
+        <div class="carousel-item ubuntu_font">
+          <div class="container">
+
+            <h1>
+              I'm a <span class="ivory">Java</span> developer with knowledge in <span class="ivory">Full Stack</span> developement. My projects can be found <span class="ivory" onclick="window.open('https://github.com/andythsu', '_blank')">here</span>
+            </h1>
+          </div>
+        </div>
+        <div class="carousel-item ubuntu_font">
+          <div class="container">
+            <h1>
+              As a coop student, I'm constantly looking for internships. You can <a class="text_decoration_none" href="mailto:th2su@edu.uwaterloo.ca"><span class="ivory text_decoration_none">email me</span></a> or message me on <span class="ivory" onclick="window.open('https://www.linkedin.com/in/andythsu/', '_blank')">LinkedIn</span>
+            </h1>
+          </div>
+        </div>
+        <div class="carousel-item ubuntu_font">
+          <div class="container">
+            <h1>
+              Visit UWaterloo website for more information on coop
+            </h1>
+            <img src="website/img/coop.png" alt="" style="width:65%" onclick="window.open('https://uwaterloo.ca/hire/how-to-hire/co-op', '_blank')">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <!-- Weclome  -->
+    <section class="welcome_section hide_me">
+      <div class="container welcome_section_overlay">
+        <div class="welcome_section_text_area">
+          <div class="row">
+            <div class="col-12 quote_header">
+              <p>
+                Favorite Quote:
+              </p>
+            </div>
+            <hr class="shadded_hr">
+            <div class="col-12 quote_content">
+              <p>
+                "Life is like a game of cards. The hand you are dealt is determinism; the way you play it is free will." - Jawaharlal Nehru
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience hide_me">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="resume text_center" onclick="window.open('https://resume.creddle.io/resume/avryggcs52i','_blank')">
+              <i class="icon far fa-file-alt m-auto"></i>
+              <div class="description" >
+                <h3>Concise Resume</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="resume text_center" onclick="window.open('https://resume.creddle.io/resume/5adwvf7yztq','_blank')">
+              <i class="icon far fa-copy"></i>
+              <div class="description" >
+                <h3>Detailed Resume</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section class="projects hide_me">
+      <div class="container-fluid">
+        <div class="row text_center">
+          <div class="col-12">
+            <h3>Projects</h3>
+          </div>
+        </div>
+        <hr class="shadded_hr">
+        <div class="row no-gutters project_item">
+          <div class="col-lg-6 order-lg-2 text-white text_center">
+            <img src="website/img/reminder.png">
+          </div>
+          <div class="col-lg-6 order-lg-1 projects_text_div">
+            <h2 style="padding-left:1em">DeltaMind</h2>
+            <p class="lead mb-2">
+              <ul>
+                <li>A reminder app that is designed for Alzheimer's Disease patients</li>
+                <li>It provides images on pop up notifications to ensure patients take the correct medicine </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="row no-gutters project_item">
+          <div class="col-lg-6 text_center">
+            <img src="website/img/focal_1.png" alt="">
+            <img src="website/img/focal_2.png" alt="">
+          </div>
+          <div class="col-lg-6 projects_text_div">
+            <h2>Focal</h2>
+            <p class="lead mb-0">
+              <ul>
+                <li>An Android application made in conjunction with Muse headband</li>
+                <li>This project won the third place at WearHacks Kitchener-Waterloo 2017</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="row no-gutters project_item">
+          <div class="col-lg-6 order-lg-2 text_center"
+          onclick="window.open('https://github.com/andythsu','_blank')">
+          <h3>And More...
+            <i class="far fa-arrow-alt-circle-right icon"></i>
+          </h3>
+        </div>
+        <div class="col-lg-6 order-lg-1 projects_text_div">
+        </div>
+      </div>
     </div>
-    <div class = "pageRightMenu"></div>
-    <div class = "pageFooter"></div>
-  </div>
+  </section>
 
+  <!-- Interests Section -->
+  <section class="interests bg-light hide_me">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text_center">
+          <h3>Interests</h3>
+        </div>
+      </div>
+      <hr class="shadded_hr">
+      <div class="row">
+        <div class="col-lg-4 interests_item">
+          <div class="interest_img_div mx-auto d-flex">
+            <img src="website/img/basketball.jpg" alt="">
+          </div>
+          <div class="interest_text_div" style="display:block">
+            <h3 class="text_center">Basketball</h3>
+            <p class="lead mb-0">
+              <ul>
+                <li>Played basketball since elementary school</li>
+                <li>Joined basketball team in middle school</li>
+                <li>Participated in University of Waterloo semi-competitive basketball game</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 interests_item">
+          <div class="interest_img_div mx-auto d-flex">
+            <img src="website/img/hackathons.jpg" alt="">
+          </div>
+          <div class="interest_text_div">
+            <h3 class="text_center">Hackathons</h3>
+            <p class="lead mb-0">
+              <ul>
+                <li>Volunteered at Hack the North 2016</li>
+                <li>Competed at WearHacks Kitchener-Waterloo 2017</li>
+                <li>Competed at DeltaHacks IV 2018</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 interests_item">
+          <div class="interest_img_div mx-auto d-flex">
+            <img src="website/img/camping.jpg" alt="">
+          </div>
+          <div class="interest_text_div">
+            <h3 class="text_center">Camping</h3>
+            <p class="lead mb-0">
+              <ul>
+                <li>Joined 55th Toronto Scouts since grade 9</li>
+                <li>Received Queens Venturer Award - the highest scouting proficiency award</li>
+                <li>Volunteered as a Scouter to teach survival lessons</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="skills hide_me">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text_center">
+          <h3>Skills</h3>
+        </div>
+      </div>
+      <hr class="shadded_hr">
+      <div class="skills_div" ng-controller = "skills_div_controller">
+        <div class="col-12 form-group skills_search_btn_div text_center">
+          <button type="button" class="btn btn-secondary skills_display_btn" type="button" name="button" ng-click = "showAllSkills()" ng-bind="skills_display_btn_text" ng-class="skills_display_btn"></button>
+        </div>
+
+        <div class="text_center table-responsive skills_table_div" ng-controller="skills_table_div_controller" data-visible = "show">
+          <table class="table" ng-bind-html = "skill_table"></table>
+          <div class="blend-screen element-mask">
+            <span id="circle"  class="circle-follow"></span>
+          </div>
+          <!-- this div handles the unmask circle -->
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<section class="footer bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="text_center">
+          <p>Made by Andy Su</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
-<script
-src="https://code.jquery.com/jquery-3.2.1.min.js"
-integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<script type="text/javascript">
+<!-- import jquery library (need to be placed after <html>) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-$("#overlay").on('click',function(){
-  $(this).hide();
-});
-
-$(document).bind("keyup",function(e){
-  if(e.keyCode == 13){ //if enter is pressed
-    $("#overlay").hide();
-  }
-});
-
-</script>
+<!-- import custom js files -->
+<script src="website/js/scrolling.js"></script>
+<script src="website/js/mask.js"></script>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <link href="website_css/indexStylesheet.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicon2-32x32.png">
+  <title>
+    Home Page
+  </title>
+</head>
+<body background = "pictures/homeBackground.jpg">
+  <div id = "overlay">
+    <h1>Click anywhere or press enter to continue</h1>
+  </div>
+  <div class = "blended_grid">
+    <div class = "pageHeader"></div>
+    <div class = "pageLeftMenu"></div>
+    <div class = "pageContent">
+      <h1>
+        <font color = "FF33FB">import</font>
+        <a href="https://resume.creddle.io/resume/avryggcs52i" target="_blank"><span class="import"><em>Resume</em></span></a>, <a href="./details" target="_blank"><span class="import"><em>Details</em></span></a>;
+      </h1>
+      <h1>
+        <!-- FF33FB = light purple -->
+        <font color = "FF33FB">class</font> Welcome {
+        </h1>
+        <h1 id = "oneTab">
+          <font color = "FF33FB">public static void</font> main(String[] <font color = "FF4333">args</font>) {
+          </h1>
+          <h1 id = "twoTab">
+            System.<font color = "3373FF">out</font>.println("My name is <font color = "21B9EC"><b>Andy Su</b></font>, and I am currently enrolled in
+            <span style="font-family:Trebuchet MS; color: yellow">Management Engineering</span> at
+            <span style="font-family:Trebuchet MS; color: yellow" >University of Waterloo.</span>
+
+            <br></br>
+
+            As a programmer, I have built some side projects. You can find them
+            <a href = "https://github.com/andythsu" target ="_blank"> <span class="link"> <em>Here()</em>. </span> </a>
+            <br></br>
+            As a coop student, I am constantly looking for available jobs. You can <a href="mailto:th2su@edu.uwaterloo.ca"> <span class="link"><em>Email_Me()</em> </span></a>
+            or message me on
+            <a href = "https://www.linkedin.com/in/andythsu/" target ="_blank"><span class="link"><em>LinkedIn()</em></span></a>. You can also gain more insights on coop <a href="https://uwaterloo.ca/hire/hire-waterloo/co-op" target="_blank" ><span class="info">here</span></a> ");
+          </h1>
+          <h1 id = "oneTab">
+          }
+        </h1>
+        <h1>
+        }
+      </h1>
+      <br>
+      <h1 class="comment">/* Side note: check out
+        <a href="./details" target="_blank"><span class="import"><em>Details</em></span></a>
+        to learn more about me (if you haven't) */
+      </h1>
+    </div>
+    <div class = "pageRightMenu"></div>
+    <div class = "pageFooter"></div>
+  </div>
+
+</body>
+</html>
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+$("#overlay").on('click',function(){
+  $(this).hide();
+});
+
+$(document).bind("keyup",function(e){
+  if(e.keyCode == 13){ //if enter is pressed
+    $("#overlay").hide();
+  }
+});
+
+</script>
