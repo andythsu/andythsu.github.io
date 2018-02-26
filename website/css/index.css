@@ -82,12 +82,12 @@ html, body{
   }
 }
 
-@media (max-width: 1400px){
-  .self_intro{
-  height: 100%;
-  padding-top: 10em;
-  background-color: rgba(156, 156, 156, 0.95)
-}
+@media (max-width: 1400px) {
+  .self_intro {
+    height: 100%;
+    padding-top: 10em;
+    background-color: rgba(156, 156, 156, 0.95)
+  }
 }
 
 .shadded_hr{
