@@ -52,23 +52,23 @@
         </div>
         <div class="carousel-item ubuntu_font">
           <div class="container">
-            <h1>I'm <span class="ivory">Andy Su</span> and I'm currently enrolled in
-              <span class="ivory">Management Engineering</span> at the
-              <span class="ivory">University of Waterloo</span>
+            <h1>I'm <span class="lightgrey">Andy Su</span> and I'm currently enrolled in
+              <span class="lightgrey">Management Engineering</span> at the
+              <span class="lightgrey">University of Waterloo</span>
             </h1>
           </div>
         </div>
         <div class="carousel-item ubuntu_font">
           <div class="container">
             <h1>
-              I'm a <span class="ivory">Java</span> and <span class="ivory">Full Stack</span> developer. My projects can be found <span class="ivory" onclick="window.open('https://github.com/andythsu', '_blank')">here</span>
+              I'm a <span class="lightgrey">Java</span> and <span class="lightgrey">Full Stack</span> developer. My projects can be found <span class="ivory link" onclick="window.open('https://github.com/andythsu', '_blank')">here</span>
             </h1>
           </div>
         </div>
         <div class="carousel-item ubuntu_font">
           <div class="container">
             <h1>
-              As a coop student, I'm constantly looking for internships. You can <a class="text_decoration_none" href="mailto:th2su@edu.uwaterloo.ca"><span class="ivory text_decoration_none">email me</span></a> or message me on <span class="ivory" onclick="window.open('https://www.linkedin.com/in/andythsu/', '_blank')">LinkedIn</span>
+              As a coop student, I'm constantly looking for internships. You can <a class="text_decoration_none" href="mailto:th2su@edu.uwaterloo.ca"><span class="ivory">email me</span></a> or message me on <span class="ivory link" onclick="window.open('https://www.linkedin.com/in/andythsu/', '_blank')">LinkedIn</span>
             </h1>
           </div>
         </div>
@@ -77,7 +77,7 @@
             <h1>
               Visit the UWaterloo website for more information on coop
             </h1>
-            <img src="website/img/coop.png" alt="" style="width:65%" onclick="window.open('https://uwaterloo.ca/hire/how-to-hire/co-op', '_blank')">
+            <img class="link" src="website/img/coop.png" alt="" style="width:65%" onclick="window.open('https://uwaterloo.ca/hire/how-to-hire/co-op', '_blank')">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -301,14 +301,20 @@
 </section>
 
 <!-- Bootstrap core JavaScript -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript">
 // set carousel moving speed to 5 seconds
+// $('.carousel').carousel({
+//   interval: 5000
+// });
+
+// set carousel moving speed to large number to debug
 $('.carousel').carousel({
-  interval: 5000
-})
+  interval: false
+});
 </script>
 </body>
 </html>

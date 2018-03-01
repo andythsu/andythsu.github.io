@@ -18,6 +18,10 @@ html, body{
   color: #FFFFF0;
 }
 
+.lightgrey{
+  color: #f0fff7;
+}
+
 .text_center{
   text-align: center;
 }
@@ -42,11 +46,15 @@ html, body{
 .self_intro{
   height: 100%;
   padding-top: 15em;
-  background-color: rgba(156, 156, 156, 0.95)
+  background-color: rgba(156, 156, 156, 1)
 }
 
 .self_intro a:hover{
   text-decoration: none;
+}
+
+.link:hover{
+  cursor: pointer;
 }
 
 .carousel{
@@ -95,7 +103,7 @@ html, body{
   .self_intro {
     height: 100%;
     padding-top: 10em;
-    background-color: rgba(156, 156, 156, 0.95)
+    background-color: rgba(156, 156, 156,1)
   }
 }
 
