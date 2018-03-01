@@ -308,10 +308,28 @@
 <script type="text/javascript">
 // set carousel moving speed to 5 seconds
 // $('.carousel').carousel({
-//   interval: 5000
+//   interval: 5000,
+//   wrap: false
 // });
 
-// set carousel moving speed to large number to debug
+var total_carousel_items = $('.carousel').find('.carousel-item').length;
+var currentIndex = $('.carousel').find('.active').index() + 1;
+var carousel_inner = $('.carousel-inner');
+
+$('.carousel').on('slid.bs.carousel', function(){
+  currentIndex = $(this).find('.active').index() + 1;
+  // show carousel direction arrows
+  carousel_inner.children('.carousel-control-prev').show();
+  carousel_inner.children('.carousel-control-next').show();
+  // if it is at the last item
+  if(currentIndex == total_carousel_items){
+    carousel_inner.children('.carousel-control-next').hide();
+  }else if (currentIndex == 1){
+    carousel_inner.children('.carousel-control-prev').hide();
+  }
+});
+
+// disable carousel
 $('.carousel').carousel({
   interval: false
 });
