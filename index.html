@@ -61,14 +61,14 @@
         <div class="carousel-item ubuntu_font">
           <div class="container">
             <h1>
-              I'm a <span class="ivory">Java</span> and <span class="ivory">Full Stack</span> developer. My projects can be found <span class="brown-3d link" onclick="window.open('https://github.com/andythsu', '_blank')">here</span>
+              I'm a <span class="ivory">Java</span> and <span class="ivory">Full Stack</span> developer. My projects can be found <span class="ivory-3d link" onclick="window.open('https://github.com/andythsu', '_blank')">here</span>
             </h1>
           </div>
         </div>
         <div class="carousel-item ubuntu_font">
           <div class="container">
             <h1>
-              As a coop student, I'm constantly looking for internships. You can <a class="text_decoration_none" href="mailto:th2su@edu.uwaterloo.ca"><span class="brown-3d">email me</span></a> or message me on <span class="brown-3d link" onclick="window.open('https://www.linkedin.com/in/andythsu/', '_blank')">LinkedIn</span>
+              As a coop student, I'm constantly looking for internships. You can <a class="text_decoration_none" href="mailto:th2su@edu.uwaterloo.ca"><span class="ivory-3d">email me</span></a> or message me on <span class="ivory-3d link" onclick="window.open('https://www.linkedin.com/in/andythsu/', '_blank')">LinkedIn</span>
             </h1>
           </div>
         </div>
@@ -269,16 +269,17 @@
       <hr class="shadded_hr">
       <div class="skills_div" ng-controller = "skills_div_controller">
         <div class="col-12 form-group skills_search_btn_div text_center">
-          <button type="button" class="btn btn-secondary skills_display_btn" type="button" name="button" ng-click = "showAllSkills()" ng-bind="skills_display_btn_text" ng-class="skills_display_btn"></button>
+          <button type="button" class="btn btn-secondary skills_display_btn" type="button" name="button" ng-click = "showAllSkills()" ng-bind="skills_display_btn_text"></button>
+          <span class="skills_display_prompt_text text_center" ng-class="skills_display_prompt_text">Hover around to see effect</span>
         </div>
 
         <div class="text_center table-responsive skills_table_div" ng-controller="skills_table_div_controller" data-visible = "show">
           <table class="table" ng-bind-html = "skill_table"></table>
+          <!-- this div handles unmask circle -->
           <div class="blend-screen element-mask">
             <span id="circle"  class="circle-follow"></span>
           </div>
-          <!-- this div handles the unmask circle -->
-
+          <!-- //////////////////////////////////// -->
         </div>
       </div>
     </div>
@@ -312,10 +313,14 @@ $('.carousel').carousel({
   wrap: false
 });
 
+// disable carousel effect
+// $('.carousel').carousel({
+//   interval: false
+// });
+
 var total_carousel_items = $('.carousel').find('.carousel-item').length;
 var currentIndex = $('.carousel').find('.active').index() + 1;
 var carousel_inner = $('.carousel-inner');
-
 $('.carousel').on('slid.bs.carousel', function(){
   currentIndex = $(this).find('.active').index() + 1;
   // show carousel direction arrows
@@ -328,11 +333,6 @@ $('.carousel').on('slid.bs.carousel', function(){
     carousel_inner.children('.carousel-control-prev').hide();
   }
 });
-
-// disable carousel effect
-// $('.carousel').carousel({
-//   interval: false
-// });
 </script>
 </body>
 </html>

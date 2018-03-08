@@ -18,13 +18,25 @@ html, body{
   color: #FFFFF0;
 }
 
-.brown-3d{
-  color: #606060;
-  text-shadow: 1px 1px #602800, 2px 2px #602800, 3px 3px #602800, 4px 4px #602800;
+.ivory-3d{
+  color: #FFFFF0;
+  text-shadow: 2px 2px black, 4px 3px black, 5px 4px black;
 }
 
 .text_center{
   text-align: center;
+}
+
+.display{
+display: initial;
+}
+
+.display_none{
+  display: none;
+}
+
+.display{
+  display: initial;
 }
 
 .pt-3em{
@@ -197,6 +209,11 @@ section{
 .skills .skills_div .skills_display_btn{
   z-index: 999;
   position: relative;
+}
+
+.skills .skills_div .skills_display_prompt_text{
+  padding-left: 10px;
+  color: red;
 }
 
 .star_color{

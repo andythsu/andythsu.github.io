@@ -5,7 +5,6 @@ $(document).ready(function() {
   var mouseX = 0, mouseY = 0;
   var xp = 0, yp =0;
   var circle = $("#circle");
-  var skills_table_div = $('.skills_table_div');
 
   function mouseStopped(){
     // if mouse stop moving remove class moving
@@ -15,10 +14,9 @@ $(document).ready(function() {
 
   // restrict the circle only in the skill table div
   $('.skills_table_div').mousemove(function(e){
-
-    // if mouse start moving add class moving
-    // it will show the circle with opacity transition
     if($(this).attr('data-visible') == 'hide'){
+      // if mouse start moving add class moving
+      // it will show the circle with opacity transition
       circle.addClass('moving');
       // circle.addClass('circle-follow');
       // get the mouse position minus 60px (radius of circle) to center the circle
@@ -30,7 +28,7 @@ $(document).ready(function() {
     }
 
   });
-  
+
   // set the momentum with setInterval function
   var loop = setInterval(function(){
     // change 12 to alter damping higher is slower

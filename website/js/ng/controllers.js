@@ -1,14 +1,17 @@
 myApp.controller('skills_div_controller', ['$scope', 'toggleDisplaySkills', function($scope, toggleDisplaySkills){
 
-  $scope.skills_display_btn_text = "Hide All"; // default text on button
+  $scope.skills_display_btn_text = "Mask All"; // default text on button
+  $scope.skills_display_prompt_text = "display_none"; // hide the prompt text
 
   //when showAllSkills button is clicked
   $scope.showAllSkills = function() {
     var text = toggleDisplaySkills.toggle();
     if(text == 'show'){
-      $scope.skills_display_btn_text = "Hide All";
+      $scope.skills_display_btn_text = "Mask All";
+      $scope.skills_display_prompt_text = "display_none";
     }else if (text == 'hide'){
       $scope.skills_display_btn_text = "Show All";
+      $scope.skills_display_prompt_text = "display";
     }
   }
 }]);
