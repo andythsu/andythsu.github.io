@@ -28,7 +28,7 @@ html, body{
 }
 
 .display{
-display: initial;
+  display: initial;
 }
 
 .display_none{
@@ -60,6 +60,11 @@ display: initial;
   height: 100%;
   padding-top: 15em;
   background-color: rgba(156, 156, 156, 0.9)
+}
+
+.hire_waterloo_img{
+  height: auto;
+  max-width: 65%;
 }
 
 .self_intro a:hover{
@@ -105,18 +110,40 @@ display: initial;
   font-size: 2em;
 }
 
-/* responsive according to the width */
-@media (max-width: 576px) {
+/* responsive media queries */
+ @media screen and (max-width: 576px) {
   .welcome_section .quote_content {
     font-size: 5vw;
   }
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-height: 780px){
   .self_intro {
     height: 100%;
     padding-top: 10em;
     background-color: rgba(156, 156, 156,0.9)
+  }
+}
+
+@media screen and (max-height: 700px){
+  .self_intro {
+    height: 100%;
+    padding-top: 5em;
+    background-color: rgba(156, 156, 156,0.9)
+  }
+}
+
+@media screen and (max-height: 600px){
+  .hire_waterloo_img{
+    max-width: 50%;
+    height: auto;
+  }
+}
+
+@media screen and (max-height: 520px){
+  .hire_waterloo_img{
+    max-width: 45%;
+    height: auto;
   }
 }
 
