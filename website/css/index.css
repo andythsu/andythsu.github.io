@@ -125,7 +125,7 @@ html, body{
   }
 }
 
-@media screen and (max-height: 700px){
+@media screen and (max-height: 565px){
   .self_intro {
     height: 100%;
     padding-top: 5em;
@@ -133,16 +133,16 @@ html, body{
   }
 }
 
-@media screen and (max-height: 600px){
+@media screen and (max-height: 550px){
   .hire_waterloo_img{
-    max-width: 50%;
+    max-width: 45%;
     height: auto;
   }
 }
 
-@media screen and (max-height: 520px){
+@media screen and (max-height: 430px){
   .hire_waterloo_img{
-    max-width: 45%;
+    max-width: 30%;
     height: auto;
   }
 }
