@@ -125,7 +125,7 @@ html, body{
   }
 }
 
-@media screen and (max-height: 553px){
+@media screen and (max-height: 619px){
   .self_intro {
     height: 100%;
     padding-top: 5em;
