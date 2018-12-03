@@ -7,35 +7,35 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
+    
     gtag('config', 'UA-116310144-1');
   </script>
-
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   
   <title>Andy Su | Student, Developer</title>
-
+  
   <!-- favicon -->
   <link rel="icon" type="website/image/png" sizes="32x32" href="website/img/favicon2-32x32.png">
-
+  
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+  
   <!-- Custom fonts for this template -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-
+  
   <!-- Custom styles for this template -->
   <link href="website/css/index.css" rel="stylesheet">
   <link rel="stylesheet" href="website/css/mask.css">
-
+  
   <!-- angular js cdn -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <!-- angular js directives -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.js"></script>
-
+  
 </head>
 
 <!-- import ng module -->
@@ -58,36 +58,36 @@
       <div class="carousel-inner text_center">
         <div class="carousel-item active ubuntu_font">
           <div class="container">
-          <h1>System.out.println( "Hello World" );</h1>
-        </div>
+            <p class="carousel-item-text">System.out.println( "Hello World" );</p>
+          </div>
         </div>
         <div class="carousel-item ubuntu_font">
           <div class="container">
-            <h1>I'm <span class="ivory">Andy Su</span> and I'm currently enrolled in
+            <p class="carousel-item-text">I'm <span class="ivory">Andy Su</span> and I'm currently enrolled in
               <span class="ivory">Management Engineering</span> at the
               <span class="ivory">University of Waterloo</span>
-            </h1>
+            </p>
           </div>
         </div>
         <div class="carousel-item ubuntu_font">
           <div class="container">
-            <h1>
+            <p class="carousel-item-text">
               I'm a <span class="ivory">Java</span> and <span class="ivory">Full Stack</span> developer. My projects can be found <span class="ivory-3d link" onclick="window.open('https://github.com/andythsu', '_blank')">here</span>
-            </h1>
+            </p>
           </div>
         </div>
         <div class="carousel-item ubuntu_font">
           <div class="container">
-            <h1>
+            <p class="carousel-item-text">
               As a coop student, I'm constantly looking for internships. You can <a class="text_decoration_none" href="mailto:th2su@edu.uwaterloo.ca"><span class="ivory-3d">email me</span></a> or message me on <span class="ivory-3d link" onclick="window.open('https://www.linkedin.com/in/andythsu/', '_blank')">LinkedIn</span>
-            </h1>
+            </p>
           </div>
         </div>
         <div class="carousel-item ubuntu_font">
           <div class="container">
-            <h1>
+            <p class="carousel-item-text">
               Visit the UWaterloo website for more information on coop
-            </h1>
+            </p>
             <img class="link hire_waterloo_img" src="website/img/coop.png" alt="" onclick="window.open('https://uwaterloo.ca/hire/how-to-hire/co-op', '_blank')">
           </div>
         </div>
@@ -100,38 +100,43 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <ol class="carousel-indicators" style="bottom: 30px">
+      <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
       </ol>
-    </section>
-    <!-- Weclome  -->
-    <section class="welcome_section hide_me">
-      <div class="container welcome_section_overlay">
-        <div class="welcome_section_text_area">
-          <div class="row">
-            <div class="col-12 quote_header">
-              <p>
-                Favorite Quote:
-              </p>
-            </div>
-            <hr class="shadded_hr">
-            <div class="col-12 quote_content">
-              <p>
-                "Life is like a game of cards. The hand you are dealt is determinism; the way you play it is free will." - Jawaharlal Nehru
-              </p>
-            </div>
+      <div class="carousel-chevron-down" style="display: none">
+        <i class="fas fa-chevron-circle-down" onclick="goToSection('#welcome_section')"></i>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Weclome  -->
+  <section id="welcome_section" class="hide_me">
+    <div class="container welcome_section_overlay">
+      <div class="welcome_section_text_area">
+        <div class="row">
+          <div class="col-12 quote_header">
+            <p>
+              Favorite Quote:
+            </p>
+          </div>
+          <hr class="shadded_hr">
+          <div class="col-12 quote_content">
+            <p>
+              "Life is like a game of cards. The hand you are dealt is determinism; the way you play it is free will." - Jawaharlal Nehru
+            </p>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="experience hide_me">
-      <div class="container">
-        <!-- <div class="row"> -->
+    </div>
+  </section>
+  
+  <section class="experience hide_me">
+    <div class="container">
+      <!-- <div class="row"> -->
         <div class="row text_center">
           <div class="col-lg-12">
             <h3>Qualifications</h3>
@@ -158,7 +163,7 @@
         </div>
       </div>
     </section>
-
+    
     <!-- projects -->
     <section class="projects hide_me">
       <div class="container-fluid">
@@ -209,7 +214,7 @@
       </div>
     </div>
   </section>
-
+  
   <!-- Interests Section -->
   <section class="interests bg-light hide_me">
     <div class="container">
@@ -268,8 +273,7 @@
       </div>
     </div>
   </section>
-
-
+  
   <section class="skills hide_me">
     <div class="container">
       <div class="row">
@@ -283,7 +287,7 @@
           <button type="button" class="btn btn-secondary skills_display_btn" type="button" name="button" ng-click = "showAllSkills()" ng-bind="skills_display_btn_text"></button>
           <span class="skills_display_prompt_text text_center" ng-class="skills_display_prompt_text">Hover around to see effect</span>
         </div>
-
+        
         <div class="text_center table-responsive skills_table_div" ng-controller="skills_table_div_controller" data-visible = "show">
           <table class="table" ng-bind-html = "skill_table"></table>
           <!-- this div handles unmask circle -->
@@ -294,7 +298,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -312,46 +315,59 @@
   </div>
 </section>
 
+
 <!-- Bootstrap core JavaScript -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 <script type="text/javascript">
-// set carousel moving speed to 5 seconds
-$('.carousel').carousel({
-  interval: 5000,
-  wrap: false
-});
+  // set carousel moving speed to 5 seconds
+  $('.carousel').carousel({
+    interval: 5000,
+    wrap: false
+  });
+  
+  // disable carousel effect
+  // $('.carousel').carousel({
+    //   interval: false
+    // });
+    
+    var total_carousel_items = $('.carousel').find('.carousel-item').length;
+    var currentIndex = $('.carousel').find('.active').index() + 1;
+    var carousel_inner = $('.carousel-inner');
+    var chevron_down = $('.carousel-chevron-down');
+    $('.carousel').on('slid.bs.carousel', function(){
+      currentIndex = $(this).find('.active').index() + 1;
 
-// disable carousel effect
-// $('.carousel').carousel({
-//   interval: false
-// });
+      // show carousel direction arrows
+      carousel_inner.children('.carousel-control-prev').show();
+      carousel_inner.children('.carousel-control-next').show();
 
-var total_carousel_items = $('.carousel').find('.carousel-item').length;
-var currentIndex = $('.carousel').find('.active').index() + 1;
-var carousel_inner = $('.carousel-inner');
-$('.carousel').on('slid.bs.carousel', function(){
-  currentIndex = $(this).find('.active').index() + 1;
-  // show carousel direction arrows
-  carousel_inner.children('.carousel-control-prev').show();
-  carousel_inner.children('.carousel-control-next').show();
-  // if it is at the last item
-  if(currentIndex == total_carousel_items){
-    carousel_inner.children('.carousel-control-next').hide();
-  }else if (currentIndex == 1){
-    carousel_inner.children('.carousel-control-prev').hide();
-  }
-});
-</script>
+      // if it is at the last item
+      if(currentIndex == total_carousel_items){
+        carousel_inner.children('.carousel-control-next').hide();
+        chevron_down.show();
+      }else{
+        // default behavior
+        chevron_down.hide();
+      }
+
+      if (currentIndex == 1){
+        carousel_inner.children('.carousel-control-prev').hide();
+      }
+    });
+  </script>
+  
 </body>
 </html>
 
-<!-- import jquery library (need to be placed after <html>) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- import jquery library (need to be placed after <html>)  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 
 <!-- import custom js files -->
 <script src="website/js/onCreate.js"></script>
 <script src="website/js/scrolling.js"></script>
 <script src="website/js/mask.js"></script>
+<script src="website/js/func.js"></script>

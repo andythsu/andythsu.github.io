@@ -20,7 +20,7 @@ html, body{
 
 .ivory-3d{
   color: #FFFFF0;
-  text-shadow: 3px 2px black, 4px 3px black, 5px 4px black;
+  text-shadow: 2px 1px black, 3px 2px black, 4px 3px black;
 }
 
 .text_center{
@@ -62,6 +62,10 @@ html, body{
   background-color: rgba(156, 156, 156, 0.9)
 }
 
+.self_intro .self_intro_font{
+  font-size: 2.5rem;
+}
+
 .hire_waterloo_img{
   height: auto;
   max-width: 65%;
@@ -80,11 +84,56 @@ html, body{
   display: none;
 }
 
-.welcome_section{
+.carousel .carousel-item-text{
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.carousel .carousel-indicators{
+  bottom: 10em;
+}
+
+.carousel .carousel-chevron-down{
+  padding-top: 4em;
+  text-align: center;
+  font-size: 2em;
+}
+
+.carousel .carousel-chevron-down .fa-chevron-circle-down{
+  animation: bounce 2s infinite
+}
+
+.carousel .carousel-chevron-down .fa-chevron-circle-down:hover{
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+#welcome_section{
   background-image: url('../img/welcome_section_img.jpg');
   background-attachment: fixed;
   background-size: cover;
-  height: 100%;
+  /* leave some space under to indicate there's more */
+  height: 95%; 
   width: 100%;
 }
 
@@ -102,21 +151,43 @@ html, body{
   top: 10%;
 }
 
-.welcome_section .quote_header{
+#welcome_section .quote_header{
   font-size: 3rem;
 }
 
-.welcome_section .quote_content{
+#welcome_section .quote_content{
   font-size: 2em;
 }
 
 /* responsive media queries */
+/* max-width: current < max-width
+min-width: current > min-width */
+
+/* max-width */
  @media screen and (max-width: 576px) {
-  .welcome_section .quote_content {
+  #welcome_section .quote_content {
     font-size: 5vw;
   }
 }
 
+/* min-width */
+@media screen and (min-width: 980px){
+  .carousel .carousel-chevron-down{
+    padding-top: 2em;
+  }
+}
+
+/* both */
+@media screen and (min-width: 1200px) and (min-height: 780px){
+  .carousel .carousel-chevron-down{
+    padding-top: 3em;
+  }
+  .carousel .carousel-item-text{
+    font-size: 2.5em;
+  }
+}
+
+/* max height */
 @media screen and (max-height: 780px){
   .self_intro {
     height: 100%;
