@@ -7,27 +7,21 @@ min-width: current > min-width */
 
 /* max-width */
 @media screen and (max-width: 1199.98px){
-    .carousel .carousel-indicators{
-        bottom: 6em;
-    }
+   
 }
 @media screen and (max-width: 991.98px){
-    .carousel .carousel-indicators{
-        bottom: 8em;
-    }
+   
 }
 @media screen and (max-width: 767.98px){
-    .carousel .carousel-indicators{
-        bottom: 12em;
-    }
+   
 }
 @media screen and (max-width: 575.98px) {
     #welcome_section .quote_content {
         font-size: 5vw;
     }
-    .carousel .carousel-indicators{
-        bottom: 13em;
-    }
+}
+@media screen and (max-width: 400px){
+  
 }
 
 /* for large screens */
@@ -38,16 +32,13 @@ min-width: current > min-width */
     .self_intro{
         padding-top: 10em;
     }
-    .carousel .carousel-indicators{
-        bottom: 5em;
-    }
     .carousel .carousel-chevron-down{
         padding-top: 2em;
     }
 }
 
 /* max height */
-@media screen and (max-height: 780px){
+@media screen and (max-height: 800px){
     .self_intro {
         height: 100%;
         padding-top: 10em;
@@ -55,7 +46,7 @@ min-width: current > min-width */
     }
 }
 
-@media screen and (max-height: 619px){
+@media screen and (max-height: 765px){
     .self_intro {
         height: 100%;
         padding-top: 5em;
@@ -63,16 +54,9 @@ min-width: current > min-width */
     }
 }
 
-@media screen and (max-height: 550px){
+@media screen and (max-height: 732px){
     .hire_waterloo_img{
         max-width: 45%;
-        height: auto;
-    }
-}
-
-@media screen and (max-height: 480px){
-    .hire_waterloo_img{
-        max-width: 30%;
         height: auto;
     }
 }
