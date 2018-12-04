@@ -32,9 +32,6 @@ min-width: current > min-width */
     .self_intro{
         padding-top: 10em;
     }
-    .carousel .carousel-chevron-down{
-        padding-top: 2em;
-    }
 }
 
 /* max height */

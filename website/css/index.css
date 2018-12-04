@@ -80,8 +80,15 @@ html, body{
 }
 
 .carousel{
-  position: initial;
+  height: 100%;
   display: none;
+}
+
+.carousel .carousel-inner{
+  height: 100%;
+}
+
+.carousel .carousel-item{
 }
 
 .carousel .carousel-item-text{
@@ -91,11 +98,12 @@ html, body{
 
 .carousel .carousel-indicators{
   position: relative;
-  top: 50px;
+  bottom: 50px;
 }
 
 .carousel .carousel-chevron-down{
-  padding-top: 2em;
+  position: relative;
+  bottom: 30px;
   text-align: center;
   font-size: 2em;
 }
