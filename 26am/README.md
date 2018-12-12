@@ -1,1 +1,1 @@
-# Made with Polymer 3.0
+# Made with LitElement
