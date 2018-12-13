@@ -9,6 +9,8 @@ import { PopupComponent } from './popup/popup.component';
 import { PopupService } from './popup/popup.service';
 import { DayCounterComponent } from './day-counter/day-counter.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 @NgModule({
    declarations: [
       AppComponent,
@@ -16,9 +18,10 @@ import { DayCounterComponent } from './day-counter/day-counter.component';
       DayCounterComponent
    ],
    imports: [
+      AppRoutingModule,
       BrowserModule,
       BrowserAnimationsModule,
-      AppRoutingModule
+      FontAwesomeModule
    ],
    providers: [
       PopupService
