@@ -2,7 +2,6 @@ import { Component, Injector } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { PopupService } from './popup/popup.service';
 // import { PopupComponent } from './popup/popup.component';
-import {DayCounterComponent} from './day-counter/day-counter.component';
 
 import {faHeart} from '@fortawesome/free-solid-svg-icons';
 
@@ -20,9 +19,5 @@ export class AppComponent {
     // const PopupElement = createCustomElement(PopupComponent, {injector});
     // Register the custom element with the browser.
     // customElements.define('popup-element', PopupElement);
-
-    const DayCounter = createCustomElement(DayCounterComponent, {injector});
-    customElements.define('day-counter', DayCounter);
-
   }
 }

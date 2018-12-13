@@ -1,10 +1,10 @@
-import { Component, ViewEncapsulation, OnInit, SimpleChanges, OnChanges} from '@angular/core';
+import { Component, OnInit, SimpleChanges, OnChanges} from '@angular/core';
 import { DayCounter } from '../class/DayCounter';
 
 @Component({
-  templateUrl: './day-counter.component.html',
-  styleUrls: ['./day-counter.component.scss'],
-  encapsulation: ViewEncapsulation.Native
+  selector: 'day-counter',
+  templateUrl: './daycounter.component.html',
+  styleUrls: ['./daycounter.component.scss']
 })
 export class DayCounterComponent implements OnInit, OnChanges{
 

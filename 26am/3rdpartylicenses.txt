@@ -266,9 +266,6 @@ Apache-2.0
 @angular/core
 MIT
 
-@angular/elements
-MIT
-
 @fortawesome/free-solid-svg-icons
 (CC-BY-4.0 AND MIT)
 Font Awesome Free License

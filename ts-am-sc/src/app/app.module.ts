@@ -7,21 +7,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PopupComponent } from './popup/popup.component';
 import { PopupService } from './popup/popup.service';
-import { DayCounterComponent } from './day-counter/day-counter.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { DaycounterModule } from './daycounter/daycounter.module';
 
 @NgModule({
    declarations: [
       AppComponent,
-      PopupComponent,
-      DayCounterComponent
+      PopupComponent
    ],
    imports: [
       AppRoutingModule,
       BrowserModule,
       BrowserAnimationsModule,
-      FontAwesomeModule
+      FontAwesomeModule,
+      DaycounterModule
    ],
    providers: [
       PopupService
@@ -30,8 +30,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
       AppComponent
    ],
    entryComponents: [
-      PopupComponent,
-      DayCounterComponent
+      PopupComponent
    ],
    schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
