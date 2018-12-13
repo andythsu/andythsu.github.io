@@ -7,8 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "buildProd": "ng build --prod --base-href 'https://andythsu.github.io/26am/'",
-    "deploy" : "ngh --dir dist/ts-am-sc",
+    "buildProd": "ng build --prod --base-href https://andythsu.github.io/26am/",
     "e2e": "ng e2e"
   },
   "private": true,
