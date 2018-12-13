@@ -14,22 +14,19 @@ export class DayCounter{
     private getTimeElapsed(): void {
         var t = Date.parse(new Date().toString()) - Date.parse(this.startTime);
         this.days = Math.floor(t / (1000 * 60 * 60 * 24));
-        this.hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-        this.minutes = Math.floor((t / 1000 / 60) % 60);
-        this.seconds = Math.floor((t / 1000) % 60);
+        this.hours = ('0' + Math.floor((t / (1000 * 60 * 60)) % 24)).slice(-2);
+        this.minutes = ('0' + Math.floor((t / 1000 / 60) % 60)).slice(-2);
+        this.seconds = ('0' + Math.floor((t / 1000) % 60)).slice(-2);
     }
 
     initCounter(){
         var self = this;
         var timeInterval = setInterval(function(){
             self.getTimeElapsed();
-            console.log("days: " + self.days);
-            console.log("hours: " + ('0' + self.hours).slice(-2));
-            console.log("minutes: " + ('0'+self.minutes).slice(-2));
-            console.log("seconds: " + ('0'+self.seconds).slice(-2));
         }, 1000);
     }
 
+    // getters
     
     getDays(){
         return this.days;

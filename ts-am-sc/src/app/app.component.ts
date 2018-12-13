@@ -18,7 +18,7 @@ export class AppComponent {
     // customElements.define('popup-element', PopupElement);
 
     const DayCounter = createCustomElement(DayCounterComponent, {injector});
-    window.customElements.define('day-counter', DayCounter);
+    customElements.define('day-counter', DayCounter);
 
   }
 }
