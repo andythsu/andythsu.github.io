@@ -266,6 +266,9 @@ Apache-2.0
 @angular/core
 MIT
 
+@angular/elements
+MIT
+
 @angular/common
 MIT
 
@@ -273,6 +276,9 @@ MIT
 MIT
 
 @angular/router
+MIT
+
+@angular/animations
 MIT
 
 zone.js
