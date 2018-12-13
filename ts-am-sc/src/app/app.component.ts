@@ -1,7 +1,7 @@
 import { Component, Injector } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { PopupService } from './popup/popup.service';
-import { PopupComponent } from './popup/popup.component';
+// import { PopupComponent } from './popup/popup.component';
 
 import {DayCounterComponent} from './day-counter/day-counter.component';
 
@@ -13,12 +13,12 @@ import {DayCounterComponent} from './day-counter/day-counter.component';
 export class AppComponent {
   constructor(injector: Injector, public popup: PopupService) {
     // Convert `PopupComponent` to a custom element.
-    const PopupElement = createCustomElement(PopupComponent, {injector});
+    // const PopupElement = createCustomElement(PopupComponent, {injector});
     // Register the custom element with the browser.
-    customElements.define('popup-element', PopupElement);
+    // customElements.define('popup-element', PopupElement);
 
     const DayCounter = createCustomElement(DayCounterComponent, {injector});
-    customElements.define('day-counter', DayCounter)
+    window.customElements.define('day-counter', DayCounter);
 
   }
 }
