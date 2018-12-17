@@ -10,6 +10,7 @@ import { PopupService } from './popup/popup.service';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DaycounterModule } from './daycounter/daycounter.module';
+import { InputboxModule } from './inputbox/inputbox.module';
 
 @NgModule({
    declarations: [
@@ -21,7 +22,8 @@ import { DaycounterModule } from './daycounter/daycounter.module';
       BrowserModule,
       BrowserAnimationsModule,
       FontAwesomeModule,
-      DaycounterModule
+      DaycounterModule,
+      InputboxModule
    ],
    providers: [
       PopupService

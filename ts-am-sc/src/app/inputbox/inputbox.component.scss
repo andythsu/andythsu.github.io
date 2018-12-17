@@ -1,0 +1,11 @@
+.mat-form-field {
+    display: block !important;
+    text-align: center !important;
+
+    .mat-form-field-wrapper{
+        .mat-form-field-underline{
+            background-color: inherit;
+        }
+    }
+
+}
