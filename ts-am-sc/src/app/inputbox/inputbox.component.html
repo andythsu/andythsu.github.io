@@ -1,3 +1,7 @@
 <mat-form-field>
-  <input #inputBox matInput placeholder="Todo" (keyup.enter)="onEnter(inputBox.value)">
+  <input #inputBox 
+          matInput 
+          placeholder="Todo" 
+          (keyup.enter)="onEnter(inputBox.value)"
+          autocomplete="off">
 </mat-form-field>
