@@ -27,7 +27,7 @@
     "@fortawesome/angular-fontawesome": "^0.3.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.10",
     "@fortawesome/free-solid-svg-icons": "^5.6.1",
-    "@polymer/polymer": "^3.1.0",
+    "@polymer/lit-element": "^0.6.5",
     "@vaadin/vaadin-time-picker": "^1.1.1",
     "@webcomponents/webcomponentsjs": "^2.2.1",
     "core-js": "^2.5.4",

@@ -3,7 +3,7 @@
   #inputBox 
   matInput 
   placeholder="" 
-  (keyup.enter)="onEnter(inputBox.value)"
+  (keyup.enter)="onEnter()"
   autocomplete="off">  
 </mat-form-field>
 
@@ -13,4 +13,6 @@
   <input matInput [matDatepicker]="picker" placeholder="" autocomplete="off">
 </mat-form-field>
 
-<time-picker></time-picker>
+<time-picker #timepicker
+(keyup.enter)="onEnter()"
+></time-picker>

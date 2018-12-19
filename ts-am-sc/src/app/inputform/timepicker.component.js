@@ -1,27 +1,41 @@
-import { PolymerElement, html } from '@polymer/polymer';
+import { LitElement, html } from '@polymer/lit-element';
+
 import '@vaadin/vaadin-time-picker';
 
-class TimePicker extends PolymerElement{
+class TimePicker extends LitElement{
     static get is(){
         return 'time-picker';
+    }
+    constructor(){
+        super();
+        this.label = '';
+        this.value = '';
     }
     static get properties(){
         return {
             label: {
                 type: String
+            },
+            value: {
+                type: String
             }
         };
     }
-    static get template(){
-        return html`
-        <style>
-        vaadin-time-picker > vaadin-combo-box-light > vaadin-time-picker-text-field[part="input-field"]{
-            background-color: unset;
-        }
-        </style>
-        <vaadin-time-picker label="{{label}}"></vaadin-time-picker>
-        `;
+   render(){
+    return html`
+        <vaadin-time-picker 
+        label="${this.label}"
+        value="${this.value}"
+        @value-changed="${e => {
+            return this.value = e.target.value;
+        }}">
+    </vaadin-time-picker>
+    `;
+   }
+   // called when element is generated/updated
+    updated(){
     }
+
 }
 
 customElements.define(TimePicker.is, TimePicker);
