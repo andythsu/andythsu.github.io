@@ -1,12 +1,14 @@
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 
+import './timepicker.component.js';
+
 @Component({
-  selector: 'inputbox',
-  templateUrl: './inputbox.component.html',
-  styleUrls: ['./inputbox.component.scss'],
+  selector: 'inputform',
+  templateUrl: './inputform.component.html',
+  styleUrls: ['./inputform.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class InputboxComponent implements OnInit {
+export class InputformComponent implements OnInit {
 
   @ViewChild('inputBox') inputBox;
 

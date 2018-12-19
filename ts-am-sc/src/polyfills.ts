@@ -87,3 +87,6 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+
+ // dependency for custom components
+import '@webcomponents/webcomponentsjs/bundles/webcomponents-ce.js';
