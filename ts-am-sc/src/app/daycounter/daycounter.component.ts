@@ -1,19 +1,22 @@
-import { Component, OnInit, SimpleChanges, OnChanges} from '@angular/core';
-import { DayCounter } from '../class/DayCounter';
+import { Component, OnInit, SimpleChanges, OnChanges, Input} from '@angular/core';
+
+import {DaycounterService} from './DayCounter.service';
 
 @Component({
   selector: 'day-counter',
+  providers: [DaycounterService],
   templateUrl: './daycounter.component.html',
   styleUrls: ['./daycounter.component.scss']
 })
 export class DayCounterComponent implements OnInit, OnChanges{
 
-  public dayCounter = new DayCounter();
+  @Input('startTime') startTime: any;
 
-  constructor() {
+  constructor(private dayCounter: DaycounterService) {
   }
 
   ngOnInit(){
+    this.dayCounter.initCounter(this.startTime);
   }
 
   //detect any changes

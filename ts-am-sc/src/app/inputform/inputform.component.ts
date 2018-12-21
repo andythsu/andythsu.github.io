@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 
+import './datepicker.component.js';
 import './timepicker.component.js';
 
 @Component({
@@ -12,6 +13,7 @@ export class InputformComponent implements OnInit {
 
   @ViewChild('inputBox') inputBox;
   @ViewChild('timepicker') timePicker;
+  @ViewChild('datepicker') datePicker;
 
   constructor() { }
 
@@ -20,17 +22,23 @@ export class InputformComponent implements OnInit {
 
   onEnter(){
     console.log(this.inputBox.nativeElement.value, " is entered");
+    console.log(this.datePicker.nativeElement.value, " is entered");
     console.log(this.timePicker.nativeElement.value, " is entered");
-    this.resetInputBoxValue();
-    this.resetTimePickerValue();
+    this.setInputBoxValue('');
+    this.setDatePickerValue('');
+    this.setTimePickerValue('');
   }
   
-  resetInputBoxValue(){
-    this.inputBox.nativeElement.value = '';
+  setInputBoxValue(val){
+    this.inputBox.nativeElement.value = val;
   }
 
-  resetTimePickerValue(){
-    this.timePicker.nativeElement.value = '';
+  setDatePickerValue(val){
+    this.datePicker.nativeElement.value = val;
+  }
+
+  setTimePickerValue(val){
+    this.timePicker.nativeElement.value = val;
   }
   
 }
