@@ -11,15 +11,15 @@
 
 .center{
     position: absolute;
-    margin: auto;
+    margin: 0 auto;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     width: max-content;
-    height: max-content;
+    .listSection{
+        overflow: auto;
+        height: 95%;
+    }
 }
 
-p{
-    color: blue;
-}
