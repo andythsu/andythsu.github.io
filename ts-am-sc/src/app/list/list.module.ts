@@ -4,11 +4,14 @@ import { ListComponent } from './list.component';
 
 import { MatListModule, MatIconModule } from '@angular/material';
 
+import { DaycounterModule } from '../daycounter/daycounter.module';
+
 @NgModule({
   imports: [
     CommonModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    DaycounterModule
   ],
   declarations: [ListComponent],
   exports: [ListComponent]

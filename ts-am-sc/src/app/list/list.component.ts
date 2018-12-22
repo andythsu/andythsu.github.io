@@ -6,53 +6,22 @@ import { ListService } from './list.service';
   providers: [ListService],
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss'],
-  // encapsulation: ViewEncapsulation.ShadowDom
+  encapsulation: ViewEncapsulation.None
 })
 export class ListComponent implements OnInit {
 
-  folders = [
+  bucketlist = [
     {
-      "name" : "folder 1",
-      "date" : "2018-01-01"
+      "name": "Hamilton",
+      "date": "2019-01-04",
+      "datetime": "2019-01-04T12:00:00",
+      "done": false
     },
     {
-      "name" : "folder 2",
-      "date" : "2018-02-02"
-    },
-    {
-      "name": "folder 3",
-      "date": "2018-03-20"
-    },
-    {
-      "name": "folder 4",
-      "date": "2018-04-21"
-    },
-    {
-      "name": "folder 5",
-      "date": "2018-05-30"
-    }
-  ];
-
-  notes = [
-    {
-      "name" : "note 1",
-      "date" : "2018-03-02"
-    },
-    {
-      "name" : "note 2",
-      "date" : "2018-05-10"
-    },
-    {
-      "name": "note 3",
-      "date": "2018-11-30"
-    },
-    {
-      "name": "note 4",
-      "date": "2018-12-21"
-    },
-    {
-      "name": "note 5",
-      "date": "2018-12-30"
+      "name" : "Ski",
+      "date" : "2019-01-18",
+      "datetime": "2019-01-18T08:00:00",
+      "done": false
     }
   ];
 

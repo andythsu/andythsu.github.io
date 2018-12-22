@@ -1,30 +1,11 @@
-:host{
-    height: 100%;
-    overflow: auto;
-}
-
-// scrollbar
-
- /* width */
- ::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #888; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-}
-
 mat-list{
-    overflow: auto;
+    mat-list-item:hover{
+        background-color: #e9e9e9;
+    }
+}
+.bucketListDayCounter{
+    width: 100%;
+    span{
+        font-size: 18px;
+    }
 }

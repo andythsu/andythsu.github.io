@@ -16,10 +16,17 @@
     right: 0;
     bottom: 0;
     left: 0;
-    width: max-content;
+    width: 50%;
+    .counterSection{
+        text-align: center;
+    }
     .listSection{
         overflow: auto;
-        height: 95%;
+        height: 90%;
+    }
+    /* width */
+    .listSection::-webkit-scrollbar {
+        display: none;
     }
 }
 

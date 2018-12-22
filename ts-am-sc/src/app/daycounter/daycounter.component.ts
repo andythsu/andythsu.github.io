@@ -12,7 +12,7 @@ export class DayCounterComponent implements OnInit, OnChanges{
 
   @Input('startTime') startTime: any;
 
-  constructor(private dayCounter: DaycounterService) {
+  constructor(public dayCounter: DaycounterService) {
   }
 
   ngOnInit(){
