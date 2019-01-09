@@ -1,15 +1,12 @@
 <mat-list>
   <h3 mat-subheader>Bucket List</h3>
-  <mat-list-item *ngFor="let item of bucketlist" class="bucketList">
-    <h4 mat-line *ngIf="!item.done">{{item.name}}</h4>
-    <p mat-line *ngIf="!item.done">{{item.date}} </p>
-    <day-counter *ngIf="!item.done" startTime="{{item.datetime}}" class="bucketListDayCounter"></day-counter>
-  </mat-list-item>
-  <!-- <mat-divider></mat-divider> -->
-  <!-- <h3 mat-subheader>Notes</h3>
-    <mat-list-item *ngFor="let note of notes">
-      <mat-icon>favorite</mat-icon>
-      <h4 mat-line>{{note.name}}</h4>
-      <p mat-line> {{note.date}} </p>
-    </mat-list-item> -->
-  </mat-list>
+  <div *ngFor="let item of bucketlist">
+    <mat-list-item *ngIf="!item.done">
+      <h4 mat-line >{{item.name}}</h4>
+      <p mat-line >{{item.date}} </p>
+      <day-counter  startTime="{{item.datetime}}" class="bucketListDayCounter"
+      showDays=true
+      showHours=true></day-counter>
+    </mat-list-item>
+  </div>
+</mat-list>

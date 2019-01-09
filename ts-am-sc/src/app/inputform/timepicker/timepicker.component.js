@@ -1,6 +1,7 @@
 import { LitElement, html } from '@polymer/lit-element';
 
 import '@vaadin/vaadin-time-picker';
+import './timepicker.style.js';
 
 class TimePicker extends LitElement{
     static get is(){
@@ -26,6 +27,7 @@ class TimePicker extends LitElement{
         <vaadin-time-picker 
         label="${this.label}"
         value="${this.value}"
+        theme="custom-timepicker"
         @value-changed="${e => {
             return this.value = e.target.value;
         }}">

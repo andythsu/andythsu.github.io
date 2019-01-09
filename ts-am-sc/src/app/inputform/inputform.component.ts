@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 
-import './datepicker.component.js';
-import './timepicker.component.js';
+import './datepicker/datepicker.component.js';
+import './timepicker/timepicker.component.js';
 
 @Component({
   selector: 'inputform',

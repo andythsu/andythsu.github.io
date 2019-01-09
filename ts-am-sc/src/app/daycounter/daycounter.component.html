@@ -1,3 +1,6 @@
 <span>
-  {{dayCounter.getDays()}} Days {{dayCounter.getHours()}} Hours {{dayCounter.getMinutes()}} Minutes {{dayCounter.getSeconds()}} Seconds
+  {{showDays ? dayCounter.getDays() + ' Days' : '' }} 
+  {{showHours ? dayCounter.getHours() + ' Hours': '' }} 
+  {{showMinutes? dayCounter.getMinutes() + ' Minutes' : ''}} 
+  {{showSeconds? dayCounter.getSeconds() + ' Seconds' : '' }}
 </span>

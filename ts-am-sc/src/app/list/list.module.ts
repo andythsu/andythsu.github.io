@@ -5,10 +5,12 @@ import { ListComponent } from './list.component';
 import { MatListModule, MatIconModule } from '@angular/material';
 
 import { DaycounterModule } from '../daycounter/daycounter.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
+    HttpClientModule,
     MatListModule,
     MatIconModule,
     DaycounterModule

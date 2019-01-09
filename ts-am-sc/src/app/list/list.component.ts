@@ -10,22 +10,16 @@ import { ListService } from './list.service';
 })
 export class ListComponent implements OnInit {
 
-  bucketlist = [
-    {
-      "name": "Hamilton",
-      "date": "2019-01-04",
-      "datetime": "2019-01-04T12:00:00",
-      "done": false
-    },
-    {
-      "name" : "Ski",
-      "date" : "2019-01-18",
-      "datetime": "2019-01-18T08:00:00",
-      "done": false
-    }
-  ];
+  bucketlist: any;
 
-  constructor() { }
+  constructor(private listService: ListService) { 
+    this.listService.getBucketList().then((data: any) => {
+      this.bucketlist = data;
+    }).catch((error: any) => {
+      console.log("error: ", error);
+    });
+
+  }
 
   ngOnInit() {
   }

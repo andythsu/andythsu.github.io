@@ -10,7 +10,16 @@ import {DaycounterService} from './DayCounter.service';
 })
 export class DayCounterComponent implements OnInit, OnChanges{
 
-  @Input('startTime') startTime: any;
+  @Input('startTime') 
+  public startTime: string;
+  @Input('showDays')
+  public showDays: boolean = false;
+  @Input('showHours')
+  public showHours: boolean = false;
+  @Input('showMinutes')
+  public showMinutes: boolean = false;
+  @Input('showSeconds')
+  public showSeconds: boolean = false;
 
   constructor(public dayCounter: DaycounterService) {
   }

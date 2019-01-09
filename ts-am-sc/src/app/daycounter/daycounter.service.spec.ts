@@ -6,11 +6,11 @@ import { DaycounterService } from './daycounter.service';
 describe('Service: DayCounter', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [DayCounterService]
+      providers: [DaycounterService]
     });
   });
 
-  it('should ...', inject([DayCounterService], (service: DayCounterService) => {
+  it('should ...', inject([DaycounterService], (service: DaycounterService) => {
     expect(service).toBeTruthy();
   }));
 });
