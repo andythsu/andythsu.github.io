@@ -88,9 +88,6 @@ html, body{
   height: 100%;
 }
 
-.carousel .carousel-item{
-}
-
 .carousel .carousel-item-text{
   font-size: 2em;
   font-weight: 300;
@@ -114,6 +111,13 @@ html, body{
 
 .carousel .carousel-chevron-down .fa-chevron-circle-down:hover{
   cursor: pointer;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  top: 0;
+  bottom: 0;
+  display: flex;
+  position: absolute;
 }
 
 @keyframes bounce {
@@ -221,7 +225,6 @@ html, body{
 
 section{
   padding-top:2em;
-  padding-bottom: 2em;
   z-index: 999;
 }
 
