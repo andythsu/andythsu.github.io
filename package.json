@@ -1,0 +1,14 @@
+{
+  "name": "andythsu.github.io",
+  "version": "1.0.0",
+  "description": "[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=andythsu&layout=compact)](https://github.com/anuraghazra/github-readme-stats)",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
