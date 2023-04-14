@@ -1,2 +1,5 @@
-# Dependency directories
-node_modules/
+# only keep the deployment script and readme for master branch
+*
+!package.json
+!package-lock.json
+!README.md
